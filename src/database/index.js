@@ -1,6 +1,4 @@
-require("dotenv").config({
-  path: ".env.local",
-});
+require("dotenv").config();
 const mysql = require("mysql2");
 const util = require("util");
 const env = process.env;
