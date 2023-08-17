@@ -24,7 +24,8 @@
     "nodemailer": "^6.9.3",
     "opencage-api-client": "^1.0.1",
     "path": "^0.12.7",
-    "util": "^0.12.5"
+    "util": "^0.12.5",
+    "vercel": "^31.4.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.19"
