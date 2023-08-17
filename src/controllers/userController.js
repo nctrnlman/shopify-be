@@ -82,7 +82,8 @@ module.exports = {
       const expiresIn = 60 * 60;
       const expirationTimestamp = Math.floor(Date.now() / 1000) + expiresIn;
       const token = jwt.sign(payload, env.JWT_SECRET, { expiresIn });
-
+      console.log(env.JWT_SECRET);
+      console.log(token);
       return res.status(200).send({
         message: "Login Success",
         token,
@@ -96,6 +97,7 @@ module.exports = {
         },
       });
     } catch (error) {
+      console.log(error);
       res.status(error.status || 500).send(error);
     }
   },
